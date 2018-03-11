@@ -2,7 +2,7 @@
 #
 # setuptools setup script for tardis
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='tardis',
       use_scm_version=True,
@@ -20,7 +20,7 @@ setup(name='tardis',
           'Programming Language :: Python :: 2.7',
           'Topic :: Scientific/Engineering :: Bio-Informatics',
       ],
-      packages=['tardis'],
+      packages=find_packages(),
       scripts=['tardis.py','tardish'],
       package_data={
           'doc': ['doc/tardis.pdf'],

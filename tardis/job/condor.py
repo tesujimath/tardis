@@ -1,5 +1,5 @@
 import string, os, stat, subprocess, sys, re
-from job import hpc
+from tardis.job import hpc
 import tardis.tutils.tutils as tutils
 
 class condorhpcJob(hpc.hpcJob):

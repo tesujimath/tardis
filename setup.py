@@ -21,7 +21,12 @@ setup(name='tardis',
           'Topic :: Scientific/Engineering :: Bio-Informatics',
       ],
       packages=find_packages(),
-      scripts=['tardis.py','tardish'],
+      entry_points={
+        'console_scripts': [
+            'tardis = tardis.__main__:main',
+            'tardish = tardis.tardish:main',
+        ],
+      },
       package_data={
           'doc': ['doc/tardis.pdf'],
           'test': ['*'],

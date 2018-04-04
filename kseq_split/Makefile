@@ -1,6 +1,5 @@
 all: kseq_test kseq_split
 
-CFLAGS += -g -O2
 LDLIBS += -lz
 
 kseq_test: kseq.h kseq_test.c
